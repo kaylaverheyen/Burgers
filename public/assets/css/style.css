@@ -1,3 +1,18 @@
+h1 {
+    text-align: center;
+    text-decoration-color: teal;
+}
+h2 {
+    text-align: center;
+    text-decoration-color: teal;
+}
+body {
+background-color: tomato;
+}
+#image {
+    align-content: center;
+}
+
 li {
     padding: 5px;
     margin: 5px;
@@ -9,6 +24,7 @@ li {
   }
   
   .create-update-form {
+    align-content: center;
     padding: 5px;
     margin: 5px;
     background: aqua;
@@ -16,5 +32,9 @@ li {
   
   .form-group {
     margin-bottom: 5px;
+  }
+ 
+  .rightBurgers {
+    float: right;
   }
   
