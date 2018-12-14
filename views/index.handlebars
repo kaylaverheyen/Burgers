@@ -1,10 +1,9 @@
 <h1>Burgers!</h1>
 
 <div class="container">
-  <div class="col-md-12">
-    <div class="col-md-4" "text-left">
+  <div class="row">
+    <div class="col-sm-4">
       <div class="leftBurgers">
-
         <ul>
           {{#each burgers}}
           {{#unless this.devoured}}
@@ -21,21 +20,21 @@
       </div>
     </div>
     <div class="newburger"></div>
-    <div class="col-md-4 text-center">
+    <div class="col-sm-4 text-center">
       <div class="input">
         <h2>Add your burger here!</h2>
-        <img src="../assets/images/burger.jpg" alt="burger" id="image">
+        <img src="../assets/images/burger.jpg" alt="burger" class="image">
         <form class="create-form">
           <div class="form-group">
             <form method="POST" action="burgers/insertOne" class="addOne text-center">
-              <textarea id="bu" type="text" name="burger_name" rows="2" cols="20"></textarea>
-              <button id="addBurger" type="submit">Add Yo' Burger To Eat it</button>
+              <textarea id="bu" type="text" name="burger_name" rows="2" cols="40"></textarea>
+              <button id="addBurger" type="submit">Add Yo' Burger To Eat it or Keep it!</button>
             </form>
         </form>
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-sm-4">
       <div class="rightBurgers">
         <h2 class="heading">Old Favorites</h2>
         <ul>
@@ -53,14 +52,5 @@
       </div>
     </div>
   </div>
-
 </div>
-
-
-
-
-{{!-- <div class="form-group">
-  <label for="dev">DEVOUR IT!</label><br>
-  <input type="radio" name="devour" value="1" checked> yummy!<br>
-  <input type="radio" name="devour" value="0"> Not hungry!
-</div> --}}
+</div>

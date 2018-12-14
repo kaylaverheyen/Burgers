@@ -9,32 +9,15 @@ h2 {
 body {
 background-color: tomato;
 }
-#image {
+.image {
     align-content: center;
 }
+.leftBurgers{
+  display: inline;
+}
 
-li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-update-form {
-    align-content: center;
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
- 
   .rightBurgers {
-    float: right;
+    display: inline;
+    
   }
   
