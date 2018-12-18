@@ -42,7 +42,7 @@ function objToSql(ob) {
 
 // Object for all our SQL statement functions.
 var orm = {
-    selectOne: function (tableInput, cb) {
+    selectAll: function (tableInput, cb) {
         var queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function (err, result) {
             if (err) {
@@ -89,7 +89,7 @@ var orm = {
             cb(result);
         });
     },
-    delete: function (table, condition, cb) {
+    deleteOne: function (table, condition, cb) {
         var queryString = "DELETE FROM " + table;
         queryString += " WHERE ";
         queryString += condition;

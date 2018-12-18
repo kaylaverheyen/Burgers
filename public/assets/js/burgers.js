@@ -6,7 +6,7 @@
 
 
 $(function () {
-    $(".devour").on("submit", function (event) {
+    $(".devour").on("click", function (event) {
         var id = $(this).data("id");
 
 
@@ -30,7 +30,7 @@ $(function () {
     });
 });
 
-$(".addBurger").on("submit", function (event) {
+$("#addBurger").on("click", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
@@ -44,7 +44,7 @@ $(".addBurger").on("submit", function (event) {
         data: newburger
     }).then(
         function () {
-            $(".newburger").append('<div>' + newburger + "</div>")
+            // $(".newburger").append('<div>' + newburger + "</div>")
 
             console.log("yummy burger!");
             // Reload the page to get the updated list
