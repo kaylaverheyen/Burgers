@@ -1,18 +1,18 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
 require('dotenv').config();
-
+console.log("env", process.env.MYSQL_PW);
 
 var connection;
 if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
     connection = mysql.createConnection({
-        host: "x3ztd854gaa7on6s.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        host: "localhost",
         port: 3306,
-        user: "fsq6vr9trolsjvu8",
-        password: "z22x6lnm1l5498om",
-        database: "heroku_l8yvd3f9pvpdmz6v"
+        user: "root",
+        password: process.env.MYSQL_PW,
+        database: "burgers_db"
     });
 
     // Make connection.

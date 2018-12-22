@@ -5,7 +5,7 @@
     <div class="col-sm-4">
       <div class="leftBurgers">
         <ul>
-          {{#each burgers}}
+          {{#each burger}}
           {{!-- {{#unless this.devoured}} --}}
           {{#unless devoured}}
           <li>
@@ -41,7 +41,7 @@
       <div class="rightBurgers">
         <h2 class="heading">Old Favorites</h2>
         <ul>
-          {{#each burgers}}
+          {{#each burger}}
           {{#if this.devoured}}
           <li>
             <p class="burgerType">{{this.burger_name}}</p>
